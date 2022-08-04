@@ -18,6 +18,8 @@ combine_tessdata -o eng.traineddata eng.punc-dawg eng.word-dawg eng.number-dawg
 
 ## Delete intermediate files
 rm -f eng.word-dawg
+rm -f eng.number-dawg
+rm -f eng.punc-dawg
 rm -f eng.traineddata.__tmp__
 
 ## Create .gz version (used for Tesseract.js)
